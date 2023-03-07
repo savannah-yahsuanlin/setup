@@ -1,9 +1,9 @@
-const add = (num1: number, num2: number) => {
-	return num1 + num2;
+const num1 = document.getElementById('num1')! as HTMLInputElement;
+const num2 = document.getElementById('num2')! as HTMLInputElement;
+
+const add = (num1: number | string , num2: number | string) => { 
+	return typeof num1 === 'number' && typeof num2 === 'number' ?  num1 + num2 : num1.toString() + num2.toString()
 }
 
-const one = '3'
-const two = 11
-
-const result = add(one, two)
-console.log(result)
+console.log(add(1, 3))
+console.log(add('moe', 'larry'))
