@@ -11,3 +11,10 @@ const add = (num1: Combine, num2: Combine, outputConversion: Convert) => {
 console.log(add(1, 3, 'as-number'))
 console.log(add('1', '3', 'as-number'))
 console.log(add('moe', 'larry', 'as-text'))
+
+const plus = (num1: number, num2: number) => num1 + num2
+const output = (num: number):void => {
+	console.log('output line17', num)
+}
+
+output(plus(10, 11))

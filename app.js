@@ -6,3 +6,8 @@ var add = function (num1, num2, outputConversion) {
 console.log(add(1, 3, 'as-number'));
 console.log(add('1', '3', 'as-number'));
 console.log(add('moe', 'larry', 'as-text'));
+var plus = function (num1, num2) { return num1 + num2; };
+var output = function (num) {
+    console.log('output line17', num);
+};
+output(plus(10, 11));
