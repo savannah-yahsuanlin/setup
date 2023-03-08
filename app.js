@@ -10,4 +10,7 @@ var plus = function (num1, num2) { return num1 + num2; };
 var output = function (num) {
     console.log('output line17', num);
 };
+var aFunction;
+aFunction = plus;
 output(plus(10, 11));
+console.log(aFunction(8, 8));

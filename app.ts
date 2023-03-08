@@ -17,4 +17,10 @@ const output = (num: number):void => {
 	console.log('output line17', num)
 }
 
+let aFunction: (a: number, b: number) => number
+
+aFunction = plus
+
+
 output(plus(10, 11))
+console.log(aFunction(8, 8))
