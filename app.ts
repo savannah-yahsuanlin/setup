@@ -32,3 +32,12 @@ const handling = (a: number, b: number, cb: (num: number) => void) => {
 handling(1,2, (result) => {
 	console.log(result)
 })
+
+let enterValue: unknown
+let enterName: string
+
+enterValue = 2
+enterValue = 'moe'
+
+if(typeof enterValue === 'string') enterName = enterValue 
+
