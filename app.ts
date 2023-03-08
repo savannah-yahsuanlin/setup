@@ -24,3 +24,11 @@ aFunction = plus
 
 output(plus(10, 11))
 console.log(aFunction(8, 8))
+
+const handling = (a: number, b: number, cb: (num: number) => void) => {
+	cb(a+b)
+}
+
+handling(1,2, (result) => {
+	console.log(result)
+})

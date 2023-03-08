@@ -14,3 +14,9 @@ var aFunction;
 aFunction = plus;
 output(plus(10, 11));
 console.log(aFunction(8, 8));
+var handling = function (a, b, cb) {
+    cb(a + b);
+};
+handling(1, 2, function (result) {
+    console.log(result);
+});
