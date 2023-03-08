@@ -20,3 +20,13 @@ var handling = function (a, b, cb) {
 handling(1, 2, function (result) {
     console.log(result);
 });
+var enterValue;
+var enterName;
+enterValue = 2;
+enterValue = 'moe';
+if (typeof enterValue === 'string')
+    enterName = enterValue;
+var errorMessage = function (massage, code) {
+    throw { massage: massage, code: code };
+};
+console.log(errorMessage('params invalid', 400));

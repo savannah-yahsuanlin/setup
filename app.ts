@@ -41,3 +41,8 @@ enterValue = 'moe'
 
 if(typeof enterValue === 'string') enterName = enterValue 
 
+const errorMessage = (massage: string, code: number):never => {
+	throw {massage: massage, code: code}
+}
+
+console.log(errorMessage('params invalid', 400))
